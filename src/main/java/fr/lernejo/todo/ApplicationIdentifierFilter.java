@@ -13,9 +13,7 @@ public class ApplicationIdentifierFilter implements Filter{
     public void doFilter(ServletRequest servletRequest,
                          ServletResponse servletResponse,
                          FilterChain filterChain) throws IOException, ServletException {
-        if (servletResponse instanceof HttpServletResponse httpResponse){
-            httpResponse.setHeader("Instance-Id", instanceId);
-        }
+        if (servletResponse instanceof HttpServletResponse) ((HttpServletResponse) servletResponse).setHeader("Instance-Id" , instanceId);
         filterChain.doFilter(servletRequest,servletResponse);
     }
 }
