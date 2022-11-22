@@ -1,7 +1,6 @@
 package fr.lernejo.todo;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 @RequestMapping("/api/todo")
 public class TodoListController {

@@ -26,7 +26,6 @@ public class ApplicationIdentifierFilter implements Filter {
             res.addHeader("Instance-Id", uuid);
         }
        // chain.doFilter(req, res);
-
     }
 
 }

@@ -9,6 +9,4 @@ public class TodoEntity {
     private Long id;
     private String message;
     private String author;
-
-
 }
